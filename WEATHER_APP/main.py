@@ -3,7 +3,7 @@ import requests
 app= Flask(__name__)
 
 def get_weather_data(city):
-   APY_KEY ='e046257c07a0053d2e28ef4fb10d967f'
+   APY_KEY = "6530db6f1031a09258a34de1ed8831c4"
    url= f'https://api.openweathermap.org/data/2.5/weather?q={city}&units=metric&lang=es&appid={APY_KEY}'
    r = requests.get(url).json()
    return r
@@ -17,9 +17,9 @@ def hello():
   else:
      return render_template('index.html')
 
-@app.route("/Nelson")
+@app.route("/CV_Nelson")
 def Nelson():
-    return "<p>Bienvenido</p>"
+    return render_template("curriculum.html")
 
 
 if __name__== '__main__':

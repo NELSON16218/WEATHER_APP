@@ -47,9 +47,9 @@
                     <br/>
                     {% if context %}
                     <center>
-                        <div class="card" style="width: 18rem;">
+                        <div class="card" style="width: 11.5rem;">
+                            <img src="http://openweathermap.org/img/w/{{context.weather.0.icon}}.png" height="75" alt="" class="card-img">
                             <div class="card-body">
-                                
                                 <h5 class="card-title">{{context.name}}</h5>
                                 <p class="card-text">Temperatura: {{context.main.temp}}</p>
                                 <p class="card-text">Latitud: {{context.coord.lat}}</p>
